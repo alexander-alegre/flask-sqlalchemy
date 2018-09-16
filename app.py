@@ -18,11 +18,6 @@ app.secret_key = 'alex'
 api = Api(app)
 
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
-
 jwt = JWT(app, authenticate, identity)  # /auth
 
 # this was to create the migrations of tables ourselves
