@@ -1,3 +1,7 @@
+p {
+  color: red;
+  font-size: 50px;
+}
 .App {
   text-align: center;
 }
